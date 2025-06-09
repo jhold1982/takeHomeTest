@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	// MARK: - Properties
+	@State private var viewModel = ViewModel()
+	
+	
+	// MARK: - View Body
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+		NavigationStack {
+			List(viewModel.articles, rowContent: ArticleRow.init)
+				.navigationTitle("Take Home Test")
+				.navigationDestination(
+					for: Article.self,
+					destination: ArticleView.init
+				)
+		}
+		.task(viewModel.loadArticles)
     }
+	// MARK: - Functions
+	
 }
 
 #Preview {

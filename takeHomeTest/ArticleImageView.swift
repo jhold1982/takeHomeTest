@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct ArticleImageView: View {
+	
+	// MARK: - Properties
+	var imageURL: URL
+	
+	
+	// MARK: - View Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+		AsyncImage(url: imageURL) { phase in
+			
+			switch phase {
+			case .empty:
+				ProgressView()
+			case .success(let image):
+				image
+					.resizable()
+					.scaledToFit()
+			default:
+				Image(systemName: "newspaper")
+			}
+		}
     }
 }
 
 #Preview {
-    ArticleImageView()
+	ArticleImageView(imageURL: Article.example.image)
 }

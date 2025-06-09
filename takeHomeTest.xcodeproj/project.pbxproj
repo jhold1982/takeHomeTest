@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		64B56A3A2DEE0A4C00674E9B /* takeHomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takeHomeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		6482154A2DF7684000D0F6C5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648215492DF7684000D0F6C5 /* ViewModel.swift */; };
+		6482154C2DF769E000D0F6C5 /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482154B2DF769E000D0F6C5 /* ArticleRow.swift */; };
+		6482154E2DF76FDD00D0F6C5 /* ArticleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482154D2DF76FDD00D0F6C5 /* ArticleImageView.swift */; };
+		64B56A4C2DEE0A5700674E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B56A482DEE0A5700674E9B /* Assets.xcassets */; };
+		64B56A4D2DEE0A5700674E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B56A492DEE0A5700674E9B /* ContentView.swift */; };
+		64B56A4E2DEE0A5700674E9B /* takeHomeTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B56A4A2DEE0A5700674E9B /* takeHomeTestApp.swift */; };
+		64B56A502DEE0B6900674E9B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B56A4F2DEE0B6900674E9B /* Article.swift */; };
+		64B56A522DEE181000674E9B /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B56A512DEE181000674E9B /* ArticleView.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		64B56A3C2DEE0A4C00674E9B /* takeHomeTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = takeHomeTest;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		648215492DF7684000D0F6C5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6482154B2DF769E000D0F6C5 /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
+		6482154D2DF76FDD00D0F6C5 /* ArticleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleImageView.swift; sourceTree = "<group>"; };
+		64B56A3A2DEE0A4C00674E9B /* takeHomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takeHomeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B56A482DEE0A5700674E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64B56A492DEE0A5700674E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64B56A4A2DEE0A5700674E9B /* takeHomeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takeHomeTestApp.swift; sourceTree = "<group>"; };
+		64B56A4F2DEE0B6900674E9B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		64B56A512DEE181000674E9B /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		64B56A372DEE0A4C00674E9B /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		64B56A312DEE0A4C00674E9B = {
 			isa = PBXGroup;
 			children = (
-				64B56A3C2DEE0A4C00674E9B /* takeHomeTest */,
+				64B56A4B2DEE0A5700674E9B /* takeHomeTest */,
 				64B56A3B2DEE0A4C00674E9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,21 @@
 				64B56A3A2DEE0A4C00674E9B /* takeHomeTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		64B56A4B2DEE0A5700674E9B /* takeHomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				64B56A4A2DEE0A5700674E9B /* takeHomeTestApp.swift */,
+				64B56A492DEE0A5700674E9B /* ContentView.swift */,
+				648215492DF7684000D0F6C5 /* ViewModel.swift */,
+				6482154D2DF76FDD00D0F6C5 /* ArticleImageView.swift */,
+				6482154B2DF769E000D0F6C5 /* ArticleRow.swift */,
+				64B56A512DEE181000674E9B /* ArticleView.swift */,
+				64B56A4F2DEE0B6900674E9B /* Article.swift */,
+				64B56A482DEE0A5700674E9B /* Assets.xcassets */,
+			);
+			path = takeHomeTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +85,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				64B56A3C2DEE0A4C00674E9B /* takeHomeTest */,
 			);
 			name = takeHomeTest;
 			packageProductDependencies = (
@@ -109,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B56A4C2DEE0A5700674E9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +143,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6482154E2DF76FDD00D0F6C5 /* ArticleImageView.swift in Sources */,
+				6482154A2DF7684000D0F6C5 /* ViewModel.swift in Sources */,
+				64B56A4D2DEE0A5700674E9B /* ContentView.swift in Sources */,
+				64B56A4E2DEE0A5700674E9B /* takeHomeTestApp.swift in Sources */,
+				64B56A502DEE0B6900674E9B /* Article.swift in Sources */,
+				64B56A522DEE181000674E9B /* ArticleView.swift in Sources */,
+				6482154C2DF769E000D0F6C5 /* ArticleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +287,7 @@
 				DEVELOPMENT_TEAM = N8877H53MP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -269,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lefthandedapps.takeHomeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -284,6 +316,7 @@
 				DEVELOPMENT_TEAM = N8877H53MP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lefthandedapps.takeHomeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
