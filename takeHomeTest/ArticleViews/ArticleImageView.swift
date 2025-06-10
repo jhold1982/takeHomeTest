@@ -17,7 +17,6 @@ struct ArticleImageView: View {
     var body: some View {
         
 		AsyncImage(url: imageURL) { phase in
-			
 			switch phase {
 			case .empty:
 				ProgressView()

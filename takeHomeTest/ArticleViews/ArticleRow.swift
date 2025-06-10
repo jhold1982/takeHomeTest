@@ -12,14 +12,12 @@ struct ArticleRow: View {
 	// MARK: - Properties
 	var article: Article
 	
+    
 	// MARK: - View Body
     var body: some View {
         
-		
 		NavigationLink(value: article) {
-			
 			HStack {
-				
 				ArticleImageView(imageURL: article.thumbnail)
 					.frame(width: 80, height: 80)
 					.clipShape(.rect(cornerRadius: 10))
