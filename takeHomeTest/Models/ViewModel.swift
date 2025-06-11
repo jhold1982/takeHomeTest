@@ -14,13 +14,19 @@ extension ContentView {
     }
 	
 	@Observable @MainActor
-	class ViewModel {
-		
+    class ViewModel {
+        
         // MARK: - Properties
-		private(set) var articles: [Article] = []
+        private(set) var articles: [Article] = []
         
         private(set) var loadState = LoadState.loading
         private(set) var loadError: (any Error)?
+        
+        private var urlSession: any DataFetching
+        
+        init(session: any DataFetching = URLSession.shared) {
+            self.urlSession = session
+        }
         
         var filterText = ""
         
@@ -29,6 +35,7 @@ extension ContentView {
                 articles
             } else {
                 articles.filter {
+                    // Using localizedStandardContains() here means we ignore case and diacritics. 
                     $0.title.localizedStandardContains(filterText)
                 }
             }
@@ -43,7 +50,7 @@ extension ContentView {
 				let url = URL(string: "https://hws.dev/news")!
 				
 				// Fetch data from remote endpoint
-				let (data, _) = try await URLSession.shared.data(from: url)
+				let (data, _) = try await urlSession.data(from: url)
 				
 				// Configure JSON decoder for API response format
 				let decoder = JSONDecoder()

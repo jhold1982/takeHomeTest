@@ -16,6 +16,7 @@
 		64B56A4C2DEE0A5700674E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B56A482DEE0A5700674E9B /* Assets.xcassets */; };
 		64B56A4D2DEE0A5700674E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B56A492DEE0A5700674E9B /* ContentView.swift */; };
 		64B56A4E2DEE0A5700674E9B /* takeHomeTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B56A4A2DEE0A5700674E9B /* takeHomeTestApp.swift */; };
+		64EC5F202DF9C30A00ED84CF /* DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EC5F1F2DF9C30A00ED84CF /* DataFetching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		64B56A492DEE0A5700674E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64B56A4A2DEE0A5700674E9B /* takeHomeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takeHomeTestApp.swift; sourceTree = "<group>"; };
 		64EC5F162DF9C06200ED84CF /* takeHomeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = takeHomeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EC5F1F2DF9C30A00ED84CF /* DataFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -73,6 +75,7 @@
 			children = (
 				643B129F2DF77AB100DCEE2A /* Article.swift */,
 				643B12A02DF77AB100DCEE2A /* ViewModel.swift */,
+				64EC5F1F2DF9C30A00ED84CF /* DataFetching.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				643B12A92DF77AC900DCEE2A /* ArticleImageView.swift in Sources */,
 				643B12AA2DF77AC900DCEE2A /* ArticleRow.swift in Sources */,
 				643B12AB2DF77AC900DCEE2A /* ArticleView.swift in Sources */,
+				64EC5F202DF9C30A00ED84CF /* DataFetching.swift in Sources */,
 				64B56A4D2DEE0A5700674E9B /* ContentView.swift in Sources */,
 				64B56A4E2DEE0A5700674E9B /* takeHomeTestApp.swift in Sources */,
 				6491D5E12DF8D55400B1CBB4 /* LoadFailedView.swift in Sources */,
